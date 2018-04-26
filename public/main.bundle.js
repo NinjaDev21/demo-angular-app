@@ -114,25 +114,21 @@ var AppComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__("./node_modules/@angular/platform-browser/esm5/platform-browser.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__("./node_modules/@angular/forms/esm5/forms.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_common_http__ = __webpack_require__("./node_modules/@angular/common/esm5/http.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_angular_in_memory_web_api__ = __webpack_require__("./node_modules/angular-in-memory-web-api/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__in_memory_data_service__ = __webpack_require__("./src/app/in-memory-data.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_routing_module__ = __webpack_require__("./src/app/app-routing.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_component__ = __webpack_require__("./src/app/app.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__dashboard_dashboard_component__ = __webpack_require__("./src/app/dashboard/dashboard.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__hero_detail_hero_detail_component__ = __webpack_require__("./src/app/hero-detail/hero-detail.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__heroes_heroes_component__ = __webpack_require__("./src/app/heroes/heroes.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__hero_search_hero_search_component__ = __webpack_require__("./src/app/hero-search/hero-search.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__hero_service__ = __webpack_require__("./src/app/hero.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__message_service__ = __webpack_require__("./src/app/message.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__messages_messages_component__ = __webpack_require__("./src/app/messages/messages.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_routing_module__ = __webpack_require__("./src/app/app-routing.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_component__ = __webpack_require__("./src/app/app.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__dashboard_dashboard_component__ = __webpack_require__("./src/app/dashboard/dashboard.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__hero_detail_hero_detail_component__ = __webpack_require__("./src/app/hero-detail/hero-detail.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__heroes_heroes_component__ = __webpack_require__("./src/app/heroes/heroes.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__hero_search_hero_search_component__ = __webpack_require__("./src/app/hero-search/hero-search.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__hero_service__ = __webpack_require__("./src/app/hero.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__message_service__ = __webpack_require__("./src/app/message.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__messages_messages_component__ = __webpack_require__("./src/app/messages/messages.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-
-
 
 
 
@@ -154,23 +150,19 @@ var AppModule = /** @class */ (function () {
             imports: [
                 __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormsModule */],
-                __WEBPACK_IMPORTED_MODULE_6__app_routing_module__["a" /* AppRoutingModule */],
-                __WEBPACK_IMPORTED_MODULE_3__angular_common_http__["c" /* HttpClientModule */],
-                // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
-                // and returns simulated server responses.
-                // Remove it when a real server is ready to receive requests.
-                __WEBPACK_IMPORTED_MODULE_4_angular_in_memory_web_api__["a" /* HttpClientInMemoryWebApiModule */].forRoot(__WEBPACK_IMPORTED_MODULE_5__in_memory_data_service__["a" /* InMemoryDataService */], { dataEncapsulation: false })
+                __WEBPACK_IMPORTED_MODULE_4__app_routing_module__["a" /* AppRoutingModule */],
+                __WEBPACK_IMPORTED_MODULE_3__angular_common_http__["b" /* HttpClientModule */],
             ],
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_7__app_component__["a" /* AppComponent */],
-                __WEBPACK_IMPORTED_MODULE_8__dashboard_dashboard_component__["a" /* DashboardComponent */],
-                __WEBPACK_IMPORTED_MODULE_10__heroes_heroes_component__["a" /* HeroesComponent */],
-                __WEBPACK_IMPORTED_MODULE_9__hero_detail_hero_detail_component__["a" /* HeroDetailComponent */],
-                __WEBPACK_IMPORTED_MODULE_14__messages_messages_component__["a" /* MessagesComponent */],
-                __WEBPACK_IMPORTED_MODULE_11__hero_search_hero_search_component__["a" /* HeroSearchComponent */]
+                __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */],
+                __WEBPACK_IMPORTED_MODULE_6__dashboard_dashboard_component__["a" /* DashboardComponent */],
+                __WEBPACK_IMPORTED_MODULE_8__heroes_heroes_component__["a" /* HeroesComponent */],
+                __WEBPACK_IMPORTED_MODULE_7__hero_detail_hero_detail_component__["a" /* HeroDetailComponent */],
+                __WEBPACK_IMPORTED_MODULE_12__messages_messages_component__["a" /* MessagesComponent */],
+                __WEBPACK_IMPORTED_MODULE_9__hero_search_hero_search_component__["a" /* HeroSearchComponent */],
             ],
-            providers: [__WEBPACK_IMPORTED_MODULE_12__hero_service__["a" /* HeroService */], __WEBPACK_IMPORTED_MODULE_13__message_service__["a" /* MessageService */]],
-            bootstrap: [__WEBPACK_IMPORTED_MODULE_7__app_component__["a" /* AppComponent */]]
+            providers: [__WEBPACK_IMPORTED_MODULE_10__hero_service__["a" /* HeroService */], __WEBPACK_IMPORTED_MODULE_11__message_service__["a" /* MessageService */]],
+            bootstrap: [__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */]]
         })
     ], AppModule);
     return AppModule;
@@ -223,7 +215,7 @@ var DashboardComponent = /** @class */ (function () {
     DashboardComponent.prototype.getHeroes = function () {
         var _this = this;
         this.heroService.getHeroes()
-            .subscribe(function (heroes) { return _this.heroes = heroes.slice(1, 5); });
+            .subscribe(function (heroes) { return _this.heroes = heroes.response.slice(1, 10); });
     };
     DashboardComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
@@ -291,7 +283,7 @@ var HeroDetailComponent = /** @class */ (function () {
         var _this = this;
         var id = +this.route.snapshot.paramMap.get('id');
         this.heroService.getHero(id)
-            .subscribe(function (hero) { return _this.hero = hero; });
+            .subscribe(function (hero) { return _this.hero = hero.response; });
     };
     HeroDetailComponent.prototype.goBack = function () {
         this.location.back();
@@ -402,6 +394,7 @@ var HeroSearchComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_of__ = __webpack_require__("./node_modules/rxjs/_esm5/observable/of.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_operators__ = __webpack_require__("./node_modules/rxjs/_esm5/operators.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__message_service__ = __webpack_require__("./src/app/message.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__environments_environment__ = __webpack_require__("./src/environments/environment.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -416,8 +409,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var httpOptions = {
-    headers: new __WEBPACK_IMPORTED_MODULE_1__angular_common_http__["d" /* HttpHeaders */]({ 'Content-Type': 'application/json' })
+    headers: new __WEBPACK_IMPORTED_MODULE_1__angular_common_http__["c" /* HttpHeaders */]({ 'Content-Type': 'application/json' })
 };
 var HeroService = /** @class */ (function () {
     function HeroService(http, messageService) {
@@ -426,9 +420,16 @@ var HeroService = /** @class */ (function () {
         this.heroesUrl = 'api/heroes'; // URL to web api
     }
     /** GET heroes from the server */
+    // getHeroes (): Observable<Hero[]> {
+    //     return this.http.get<Hero[]>(this.heroesUrl)
+    //         .pipe(
+    //             tap(heroes => this.log(`fetched heroes`)),
+    //             catchError(this.handleError('getHeroes', []))
+    //         );
+    // }
     HeroService.prototype.getHeroes = function () {
         var _this = this;
-        return this.http.get(this.heroesUrl)
+        return this.http.get(__WEBPACK_IMPORTED_MODULE_5__environments_environment__["a" /* environment */].API_URL + 'get-heros')
             .pipe(Object(__WEBPACK_IMPORTED_MODULE_3_rxjs_operators__["f" /* tap */])(function (heroes) { return _this.log("fetched heroes"); }), Object(__WEBPACK_IMPORTED_MODULE_3_rxjs_operators__["a" /* catchError */])(this.handleError('getHeroes', [])));
     };
     /** GET hero by id. Return `undefined` when id not found */
@@ -445,7 +446,8 @@ var HeroService = /** @class */ (function () {
     /** GET hero by id. Will 404 if id not found */
     HeroService.prototype.getHero = function (id) {
         var _this = this;
-        var url = this.heroesUrl + "/" + id;
+        //const url = `${this.heroesUrl}/${id}`;
+        var url = __WEBPACK_IMPORTED_MODULE_5__environments_environment__["a" /* environment */].API_URL + 'get-hero' + "/" + id;
         return this.http.get(url).pipe(Object(__WEBPACK_IMPORTED_MODULE_3_rxjs_operators__["f" /* tap */])(function (_) { return _this.log("fetched hero id=" + id); }), Object(__WEBPACK_IMPORTED_MODULE_3_rxjs_operators__["a" /* catchError */])(this.handleError("getHero id=" + id)));
     };
     /* GET heroes whose name contains search term */
@@ -455,25 +457,28 @@ var HeroService = /** @class */ (function () {
             // if not search term, return empty hero array.
             return Object(__WEBPACK_IMPORTED_MODULE_2_rxjs_observable_of__["a" /* of */])([]);
         }
-        return this.http.get("api/heroes/?name=" + term).pipe(Object(__WEBPACK_IMPORTED_MODULE_3_rxjs_operators__["f" /* tap */])(function (_) { return _this.log("found heroes matching \"" + term + "\""); }), Object(__WEBPACK_IMPORTED_MODULE_3_rxjs_operators__["a" /* catchError */])(this.handleError('searchHeroes', [])));
+        // const url = `environment.API_URL+pi/heroes/?name=${term}`;
+        var url = __WEBPACK_IMPORTED_MODULE_5__environments_environment__["a" /* environment */].API_URL + 'search-hero/' + "?name=" + term;
+        return this.http.get(url).pipe(Object(__WEBPACK_IMPORTED_MODULE_3_rxjs_operators__["f" /* tap */])(function (_) { return _this.log("found heroes matching \"" + term + "\""); }), Object(__WEBPACK_IMPORTED_MODULE_3_rxjs_operators__["a" /* catchError */])(this.handleError('searchHeroes', [])));
     };
     //////// Save methods //////////
     /** POST: add a new hero to the server */
     HeroService.prototype.addHero = function (hero) {
         var _this = this;
-        return this.http.post(this.heroesUrl, hero, httpOptions).pipe(Object(__WEBPACK_IMPORTED_MODULE_3_rxjs_operators__["f" /* tap */])(function (hero) { return _this.log("added hero w/ id=" + hero.id); }), Object(__WEBPACK_IMPORTED_MODULE_3_rxjs_operators__["a" /* catchError */])(this.handleError('addHero')));
+        return this.http.post(__WEBPACK_IMPORTED_MODULE_5__environments_environment__["a" /* environment */].API_URL + 'add-hero', hero, httpOptions)
+            .pipe(Object(__WEBPACK_IMPORTED_MODULE_3_rxjs_operators__["f" /* tap */])(function (hero) { return _this.log("added hero id=" + hero.response.id); }), Object(__WEBPACK_IMPORTED_MODULE_3_rxjs_operators__["a" /* catchError */])(this.handleError('addHero')));
     };
     /** DELETE: delete the hero from the server */
     HeroService.prototype.deleteHero = function (hero) {
         var _this = this;
         var id = typeof hero === 'number' ? hero : hero.id;
-        var url = this.heroesUrl + "/" + id;
+        var url = __WEBPACK_IMPORTED_MODULE_5__environments_environment__["a" /* environment */].API_URL + 'delete-hero' + "/" + id;
         return this.http.delete(url, httpOptions).pipe(Object(__WEBPACK_IMPORTED_MODULE_3_rxjs_operators__["f" /* tap */])(function (_) { return _this.log("deleted hero id=" + id); }), Object(__WEBPACK_IMPORTED_MODULE_3_rxjs_operators__["a" /* catchError */])(this.handleError('deleteHero')));
     };
     /** PUT: update the hero on the server */
     HeroService.prototype.updateHero = function (hero) {
-        var _this = this;
-        return this.http.put(this.heroesUrl, hero, httpOptions).pipe(Object(__WEBPACK_IMPORTED_MODULE_3_rxjs_operators__["f" /* tap */])(function (_) { return _this.log("updated hero id=" + hero.id); }), Object(__WEBPACK_IMPORTED_MODULE_3_rxjs_operators__["a" /* catchError */])(this.handleError('updateHero')));
+        var url = "" + (__WEBPACK_IMPORTED_MODULE_5__environments_environment__["a" /* environment */].API_URL + 'update-hero');
+        return this.http.post(url, hero, httpOptions).pipe();
     };
     /**
      * Handle Http operation that failed.
@@ -486,7 +491,7 @@ var HeroService = /** @class */ (function () {
         if (operation === void 0) { operation = 'operation'; }
         return function (error) {
             // TODO: send the error to remote logging infrastructure
-            console.error(error); // log to console instead
+            // console.error(error); // log to console instead
             // TODO: better job of transforming error for user consumption
             _this.log(operation + " failed: " + error.message);
             // Let the app keep running by returning an empty result.
@@ -499,7 +504,7 @@ var HeroService = /** @class */ (function () {
     };
     HeroService = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_common_http__["b" /* HttpClient */],
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_common_http__["a" /* HttpClient */],
             __WEBPACK_IMPORTED_MODULE_4__message_service__["a" /* MessageService */]])
     ], HeroService);
     return HeroService;
@@ -565,8 +570,8 @@ var HeroesComponent = /** @class */ (function () {
     };
     HeroesComponent.prototype.getHeroes = function () {
         var _this = this;
-        this.heroService.getHeroes()
-            .subscribe(function (heroes) { return _this.heroes = heroes; });
+        this.heroResponse = this.heroService.getHeroes();
+        this.heroResponse.subscribe(function (heroes) { return _this.heroes = heroes.response; });
     };
     HeroesComponent.prototype.add = function (name) {
         var _this = this;
@@ -577,6 +582,7 @@ var HeroesComponent = /** @class */ (function () {
         this.heroService.addHero({ name: name })
             .subscribe(function (hero) {
             _this.heroes.push(hero);
+            _this.getHeroes();
         });
     };
     HeroesComponent.prototype.delete = function (hero) {
@@ -592,36 +598,6 @@ var HeroesComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__hero_service__["a" /* HeroService */]])
     ], HeroesComponent);
     return HeroesComponent;
-}());
-
-
-
-/***/ }),
-
-/***/ "./src/app/in-memory-data.service.ts":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return InMemoryDataService; });
-var InMemoryDataService = /** @class */ (function () {
-    function InMemoryDataService() {
-    }
-    InMemoryDataService.prototype.createDb = function () {
-        var heroes = [
-            { id: 11, name: 'Mr. Dhar' },
-            { id: 12, name: 'Malay' },
-            { id: 13, name: 'Bombasto' },
-            { id: 14, name: 'Celeritas' },
-            { id: 15, name: 'Magneta' },
-            { id: 16, name: 'RubberMan' },
-            { id: 17, name: 'Dynama' },
-            { id: 18, name: 'Dr IQ' },
-            { id: 19, name: 'Magma' },
-            { id: 20, name: 'Tornado' }
-        ];
-        return { heroes: heroes };
-    };
-    return InMemoryDataService;
 }());
 
 
@@ -728,7 +704,9 @@ var MessagesComponent = /** @class */ (function () {
 // `ng build --env=prod` then `environment.prod.ts` will be used instead.
 // The list of which env maps to which file can be found in `.angular-cli.json`.
 var environment = {
-    production: false
+    production: false,
+    API_URL: 'http://demoangular.com/api/',
+    base_url: 'http://demoangular.com/',
 };
 
 

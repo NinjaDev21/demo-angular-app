@@ -19,5 +19,18 @@ use Illuminate\Http\Request;
 //    Route::get('heros-index',[
 //        'uses' => 'HerosController@index'
 //    ]);
-    Route::get('some-heros', 'HerosController@index');
 // });
+
+/** Get the list of heros */
+Route::get('get-heros', 'HerosController@index');
+/** add heros */
+Route::post('add-hero','HerosController@addHero');
+/** delete hero */
+Route::delete('delete-hero/{id}','HerosController@deleteHero');
+/** view hero*/
+Route::get('get-hero/{id}', 'HerosController@getHero');
+/** update hero */
+Route::post('update-hero','HerosController@updateHero');
+/** search heros*/
+Route::get('search-hero', 'HerosController@searchHero');
+
